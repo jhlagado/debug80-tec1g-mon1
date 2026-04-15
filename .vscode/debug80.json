@@ -5,7 +5,8 @@
       "asm": "src/serial.asm",
       "sourceFile": "src/serial.asm",
       "sourceRoots": [
-        "src"
+        "src",
+        "../debug80/roms/tec1/mon-1b"
       ],
       "outputDir": "build",
       "artifactBase": "serial",
@@ -25,17 +26,19 @@
         ],
         "appStart": 2048,
         "entry": 0,
-        "romHex": "../roms/tec1/mon-1b/mon-1b.hex",
+        "romHex": "../debug80/roms/tec1/mon-1b/mon-1b.hex",
         "extraListings": [
-          "../roms/tec1/mon-1b/mon-1b.lst"
+          "../debug80/roms/tec1/mon-1b/mon-1b.lst"
         ]
-      }
+      },
+      "stopOnEntry": true
     },
     "lcd-test": {
       "asm": "src/lcd-test.asm",
       "sourceFile": "src/lcd-test.asm",
       "sourceRoots": [
-        "src"
+        "src",
+        "../debug80/roms/tec1/mon-1b"
       ],
       "outputDir": "build",
       "artifactBase": "lcd-test",
@@ -55,9 +58,9 @@
         ],
         "appStart": 2048,
         "entry": 0,
-        "romHex": "../roms/tec1/mon-1b/mon-1b.hex",
+        "romHex": "../debug80/roms/tec1/mon-1b/mon-1b.hex",
         "extraListings": [
-          "../roms/tec1/mon-1b/mon-1b.lst"
+          "../debug80/roms/tec1/mon-1b/mon-1b.lst"
         ]
       }
     }
