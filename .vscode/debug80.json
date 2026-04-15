@@ -4,38 +4,63 @@
     "serial": {
       "asm": "src/serial.asm",
       "sourceFile": "src/serial.asm",
-      "sourceRoots": ["src"],
+      "sourceRoots": [
+        "src"
+      ],
       "outputDir": "build",
       "artifactBase": "serial",
       "platform": "tec1g",
       "tec1g": {
         "regions": [
-          { "start": 0, "end": 2047, "kind": "rom" },
-          { "start": 2048, "end": 4095, "kind": "ram" }
+          {
+            "start": 0,
+            "end": 2047,
+            "kind": "rom"
+          },
+          {
+            "start": 2048,
+            "end": 4095,
+            "kind": "ram"
+          }
         ],
         "appStart": 2048,
         "entry": 0,
         "romHex": "../roms/tec1/mon-1b/mon-1b.hex",
-        "extraListings": ["../roms/tec1/mon-1b/mon-1b.lst"]
+        "extraListings": [
+          "../roms/tec1/mon-1b/mon-1b.lst"
+        ]
       }
     },
     "lcd-test": {
       "asm": "src/lcd-test.asm",
       "sourceFile": "src/lcd-test.asm",
-      "sourceRoots": ["src"],
+      "sourceRoots": [
+        "src"
+      ],
       "outputDir": "build",
       "artifactBase": "lcd-test",
       "platform": "tec1g",
       "tec1g": {
         "regions": [
-          { "start": 0, "end": 2047, "kind": "rom" },
-          { "start": 2048, "end": 4095, "kind": "ram" }
+          {
+            "start": 0,
+            "end": 2047,
+            "kind": "rom"
+          },
+          {
+            "start": 2048,
+            "end": 4095,
+            "kind": "ram"
+          }
         ],
         "appStart": 2048,
         "entry": 0,
         "romHex": "../roms/tec1/mon-1b/mon-1b.hex",
-        "extraListings": ["../roms/tec1/mon-1b/mon-1b.lst"]
+        "extraListings": [
+          "../roms/tec1/mon-1b/mon-1b.lst"
+        ]
       }
     }
-  }
+  },
+  "projectPlatform": "tec1g"
 }
