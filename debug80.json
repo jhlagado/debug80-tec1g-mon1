@@ -6,7 +6,7 @@
       "sourceFile": "src/serial.asm",
       "sourceRoots": [
         "src",
-        "../debug80/roms/tec1/mon-1b"
+        "roms/tec1/mon-1b"
       ],
       "outputDir": "build",
       "artifactBase": "serial",
@@ -26,19 +26,20 @@
         ],
         "appStart": 2048,
         "entry": 0,
-        "romHex": "../debug80/roms/tec1/mon-1b/mon-1b.hex",
+        "romHex": "roms/tec1/mon-1b/mon-1b.hex",
         "extraListings": [
-          "../debug80/roms/tec1/mon-1b/mon-1b.lst"
+          "roms/tec1/mon-1b/mon-1b.lst"
         ]
       },
-      "stopOnEntry": true
+      "stopOnEntry": true,
+      "profile": "mon1b"
     },
     "lcd-test": {
       "asm": "src/lcd-test.asm",
       "sourceFile": "src/lcd-test.asm",
       "sourceRoots": [
         "src",
-        "../debug80/roms/tec1/mon-1b"
+        "roms/tec1/mon-1b"
       ],
       "outputDir": "build",
       "artifactBase": "lcd-test",
@@ -58,12 +59,33 @@
         ],
         "appStart": 2048,
         "entry": 0,
-        "romHex": "../debug80/roms/tec1/mon-1b/mon-1b.hex",
+        "romHex": "roms/tec1/mon-1b/mon-1b.hex",
         "extraListings": [
-          "../debug80/roms/tec1/mon-1b/mon-1b.lst"
+          "roms/tec1/mon-1b/mon-1b.lst"
         ]
-      }
+      },
+      "profile": "mon1b"
     }
   },
-  "projectPlatform": "tec1g"
+  "projectPlatform": "tec1g",
+  "projectVersion": 2,
+  "defaultProfile": "mon1b",
+  "profiles": {
+    "mon1b": {
+      "platform": "tec1g",
+      "description": "MON-1B monitor profile for TEC-1G",
+      "bundledAssets": {
+        "romHex": {
+          "bundleId": "tec1/mon1b/v1",
+          "path": "mon-1b.bin",
+          "destination": "roms/tec1/mon-1b/mon-1b.bin"
+        },
+        "listing": {
+          "bundleId": "tec1/mon1b/v1",
+          "path": "mon-1b.lst",
+          "destination": "roms/tec1/mon-1b/mon-1b.lst"
+        }
+      }
+    }
+  }
 }
